@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: org.springframework.scala:spring-scala:1.0.0.M2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.scala/spring-scala/jars/spring-scala-1.0.0.M2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
