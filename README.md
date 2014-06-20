@@ -9,3 +9,5 @@ and writing it to a distributed database. Akka espouses a "let it fail" approach
 no-fail persistence of data, but coupled to writing to the log and then reading the log into HDFS for later analysis
 you can dance at two weddings.   I hope to continue this project with writing to MongoDB as the service instead.  Come
 back to visit.
+
+rt
