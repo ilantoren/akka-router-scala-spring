@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea_modules/akka-router-scala-spring.iml" filepath="$PROJECT_DIR$/.idea_modules/akka-router-scala-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea_modules/akka-router-scala-spring-build.iml" filepath="$PROJECT_DIR$/.idea_modules/akka-router-scala-spring-build.iml" />
     </modules>
   </component>
 </project>

@@ -1,16 +1,13 @@
 package sample
 
-import scala.concurrent.{Await, ExecutionContext, future, promise}
+import scala.concurrent.future
 
-import akka.actor.{ActorRef, ActorSystem}
+import akka.actor.ActorRef
 import org.springframework.scala.context.function.FunctionalConfigApplicationContext
 
-import akka.actor.{ActorRef, ActorSystem}
-import sample.SpringExtension._
+import akka.actor.ActorSystem
 
 import akka.pattern.ask
-import scala.concurrent._
-import scala.util._
 import org.springframework.scala.context.function._
 import org.specs2.mutable._
 import org.junit.runner._
