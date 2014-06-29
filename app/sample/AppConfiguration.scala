@@ -29,9 +29,24 @@ class AppConfiguration extends FunctionalConfiguration {
     new FibonacciService
   }
 
+  val slickService = bean("slickService") {
+    println( "creating the SlickServiceBean")
+    val sl = new SlickService
+
+    sl.start
+    Main.slickService = sl
+    sl
+  }
+
   val fibonacciActor = bean("fibonacciActor", scope = BeanDefinition.SCOPE_PROTOTYPE) {
     val fn = new FibonacciActor
     fn.fibonacciService = fibonacciService()
     fn
+  }
+
+  val slickActor = bean("slickActor", scope =  BeanDefinition.SCOPE_PROTOTYPE ) {
+    val sa = new SlickActor
+    sa.slickService = slickService()
+    sa
   }
 }

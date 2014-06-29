@@ -1,4 +1,4 @@
-name := """akka-scala-spring"""
+name := """akka-router-scala-spring"""
 
 version := "0.1"
 
@@ -12,7 +12,10 @@ libraryDependencies ++= Seq(
   "javax.inject" % "javax.inject" % "1",
   "junit" % "junit" % "4.11" % "test",
   "org.specs2" %% "specs2" % "1.13" % "test"  ,
-  "com.novocode" % "junit-interface" % "0.9" % "test->default"
+  "com.novocode" % "junit-interface" % "0.9" % "test->default",
+  "com.typesafe.slick" %% "slick" % "2.0.0",
+  "org.slf4j" % "slf4j-nop" % "1.6.4",
+  "com.h2database" % "h2" % "1.3.170"
 )
 
 testOptions += Tests.Argument(TestFrameworks.JUnit, "-v", "-a")

@@ -35,6 +35,10 @@
     <orderEntry type="library" name="SBT: org.springframework:spring-expression:3.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-reflect:2.10.1" level="project" />
     <orderEntry type="library" name="SBT: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.slick:slick_2.10:2.0.0" level="project" />
+    <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.6.4" level="project" />
+    <orderEntry type="library" name="SBT: org.slf4j:slf4j-nop:1.6.4" level="project" />
+    <orderEntry type="library" name="SBT: com.h2database:h2:1.3.170" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: junit:junit:4.11:test" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.hamcrest:hamcrest-core:1.3:test" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: org.specs2:specs2_2.10:1.13:test" level="project" />

@@ -14,7 +14,6 @@ class FibonacciService  {
         fib(n-1, b, a+b)
       }
     }
-
     fib(n, 0, 1)
   }
 }
