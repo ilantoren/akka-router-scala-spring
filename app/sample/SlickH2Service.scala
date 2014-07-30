@@ -1,10 +1,8 @@
 package sample
 
 
-import scala.slick.driver.H2Driver.simple._
-import scala.slick.direct.AnnotationMapper.column
-import scala.slick.model.Column
 import scala.collection.mutable
+import scala.slick.driver.H2Driver.simple._
 
 
 /**
@@ -37,10 +35,20 @@ class SlickService {
     // DB_CLOSE_DELAY=-1 keeps the H2 alive until JVM shuts down
     Database.forURL("jdbc:h2:mem:test1;DB_CLOSE_DELAY=-1", driver = "org.h2.Driver") withSession {
       implicit session =>
-
         // Create the tables, including primary and foreign keys
         (fibonacci.ddl).create
 
+    }
+    true
+  }
+
+  def shutdown: Boolean = {
+    val fibonacci = TableQuery[Fibonacci]
+    Database.forURL("jdbc:h2:mem:test1", driver = "org.h2.Driver") withSession {
+      implicit session =>
+        //  Drop the table to start with a clean table
+        (fibonacci.ddl).drop
+        session.close()
     }
     true
   }
